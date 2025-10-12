@@ -91,6 +91,14 @@ p {
     animation-fill-mode: forwards;
 }
 
+.hoverPopAltImage:hover {
+    animation-name: hoverScale;
+    animation-duration: 100ms;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    src: url("../images/titles/scefcologo_wow.png");
+}
+
 .navtext {
     color: black;
     background-color: white;
@@ -153,17 +161,31 @@ p {
 #section-merch {
     margin-right: 1vw;
 }
+#section-title {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 125vh;
+    background: linear-gradient(180deg, #3991f2 0%,#ACE9FF 90%, #DCECFC 100%);
+    background-image: url("../images/backgrounds/scefco2025bgalt.jpg");
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110% auto;
+}
 
 #section-countdown {
     text-align: center;
     align-items: center;
     width: 100%;
-    background-image:url("../images/backgrounds/sc_gradient.jpg");
+    background-image:url("../images/backgrounds/scefco2025bgalt.jpg");
+    height: 155vh;
 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     
     /* font-family: "Red Hat Display", sans-serif; */
     display: flex;
@@ -306,12 +328,20 @@ p {
 
 #timer {
     word-spacing: 3vw;
-    width: 100%;
-    display: none;
+    width: 80%;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    margin-bottom: 200px;
+}
+
+#LogoScefco {
+    width: 85vw;
+    height: 42.5vw;
+    background-color: transparent;
+    margin-bottom: 100px;
 }
 
 .countdownText {
@@ -484,7 +514,7 @@ iframe {
 
     #section-countdown {
         background-size: 100% 45vh;
-        background-position:top;
+        background-position: top;
         height: 45vh;
     }
 
