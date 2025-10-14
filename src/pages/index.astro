@@ -8,7 +8,9 @@ import SCLogo from "../images/logo/SCShades.png"
 import Nav from "../components/betternav.astro";
 import Section from "../components/section.astro";
 import LombaCarousel from "../components/lomba-carousel.astro";
-import Image from "astro/components/Image.astro";
+import { Image } from "astro:assets";
+import LogoScefco from "../images/titles/scefcologo.png";
+import LogoScefcoAlt from "../images/titles/scefcologo_wow.png";
 import "../styles/style.css";
 import { defineConfig, passthroughImageService } from "astro/config";
 ---
@@ -17,9 +19,10 @@ import { defineConfig, passthroughImageService } from "astro/config";
     <Nav id="nav" />
     <div id="navBlock">
     </div>
+    </Section>
     <Section id="section-countdown">
+        <Image class="hoverPop" id="LogoScefco" src={LogoScefcoAlt} alt="SCEFCO LOGO"></Image>
         <h1 class="announce">SEE YOU</h1>
-        <h1 class="now announce">NEXT YEAR</h1>
         <div id="timer" class="hoverPop">
             <h1 class="countdownText" id="days"></h1>
             <h1 class="countdownDot">:</h1>
@@ -31,9 +34,6 @@ import { defineConfig, passthroughImageService } from "astro/config";
         </div>
         <!-- <h1 class="countdownText" id="countdown"></h1> -->
     </Section>
-    <!-- <Section id="section-home">
-        <h1>(Insert Scefco Art)</h1>
-    </Section> -->
     <Section id="section-lomba" class="section-lomba">
         <LombaCarousel />
     </Section>
