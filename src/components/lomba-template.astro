@@ -1,5 +1,5 @@
 ---
-const { namaLomba, photo, id } = Astro.props;
+const { namaLomba, subtitleLomba, linkLomba, photo, id } = Astro.props;
 import Image from "astro/components/Image.astro";
 ---
 
@@ -20,9 +20,10 @@ import Image from "astro/components/Image.astro";
     <div class="carousel-item-divider right">
       <div class="right-item pc">
         <p class="lomba-title">{namaLomba}</p>
+        <p id="lomba-subtitle">{subtitleLomba}</p>
       </div>
       <div class="scefSignup right-item">
-          <a href="/">
+          <a href={linkLomba}>
             <button>REGISTER!</button>
           </a>
           <a href="/Juknis_Scefco.pdf">
@@ -130,6 +131,16 @@ import Image from "astro/components/Image.astro";
       color: white;
     }
 
+    #lomba-subtitle {
+      margin-top: 5px;
+      padding-left: 8px;
+      font-size: calc(var(--p-fz) + 1.5vw);
+      font-weight: 700;
+      text-align: center;
+      line-height: calc(1.05* calc(var(--p-fz) + 1.5vw));
+      text-shadow: 2.5px 2.5px 5px #262d83;
+      color: white;
+    }
     a {
       width: 100%;
       color: black;
