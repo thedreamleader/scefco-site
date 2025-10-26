@@ -1,5 +1,5 @@
 ---
-const { namaLomba, subtitleLomba, linkLomba, photo, id } = Astro.props;
+const { namaLomba, subtitleLomba, linkLomba, juknisLomba, photo, id } = Astro.props;
 import Image from "astro/components/Image.astro";
 ---
 
@@ -26,7 +26,7 @@ import Image from "astro/components/Image.astro";
           <a href={linkLomba}>
             <button>REGISTER!</button>
           </a>
-          <a href="/Juknis_Scefco.pdf">
+          <a href={juknisLomba}>
             <button class="juknis-button">JUKNIS</button>
           </a>
       </div>
