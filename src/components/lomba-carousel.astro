@@ -1,32 +1,24 @@
 ---
 import { Image } from "astro:assets";
-import EnglishSpeech from "../images/scefMascots/englishSpeech.png";
-import Esai from "../images/scefMascots/esai.png";
-import Futsal from "../images/scefMascots/futsal.png";
-import Mhq from "../images/scefMascots/mhq.png";
-import PidatoArab from "../images/scefMascots/pidatoArab.png";
-import StoryTelling from "../images/scefMascots/storyTelling.png";
-import RatohJaroe from "../images/scefMascots/tariSaman.png";
 import LombaTemplate from "./lomba-template.astro";
 import Competitions_Title from "../images/titles/comps.png";
 ---
-
 <Image class="hoverPop" id="comp_title" src={Competitions_Title} alt="Competitions" />
 <div id="horizontal-scroll">
   <div id="carousel-container">
     <div class="carousel-space"></div>
-    <LombaTemplate id="EnglishSpeech" class="cards" namaLomba="ENGLISH SPEECH" photo={EnglishSpeech} linkLomba="https://forms.gle/HmvtymrcQgA1xF839"/>
-    <LombaTemplate id="Esai"          class="cards" namaLomba="ESAI" photo={Esai} linkLomba="https://forms.gle/LC3ArzKBXQ1Pm4VbA"/>
-    <LombaTemplate id="Futsal"        class="cards" namaLomba="FUTSAL" photo={Futsal} linkLomba="https://forms.gle/HXyC6HAnxPRnPf6t8"/>
-    <LombaTemplate id="Mhq"           class="cards" namaLomba="MHQ" subtitleLomba="(SMP)" photo={Mhq} linkLomba="https://forms.gle/ZQbzk7jMHWyc21Fy7"/>
-    <LombaTemplate id="Mhq"           class="cards" namaLomba="MHQ" subtitleLomba="(SMA)" photo={Mhq} linkLomba="https://forms.gle/ZQbzk7jMHWyc21Fy7"/> 
-    <LombaTemplate id="PidatoArab"    class="cards" namaLomba="PIDATO ARAB" photo={PidatoArab} linkLomba="https://forms.gle/fJXbea5QgEvafgTH9"/>
-    <LombaTemplate id="StoryTelling"  class="cards" namaLomba="STORY TELLING" photo={StoryTelling} linkLomba="https://forms.gle/BHAfiC8U7Nd6eA2A8"/>
-    <LombaTemplate id="RatohJaroe"    class="cards" namaLomba="RATOH JAROE"  photo={RatohJaroe} linkLomba="https://forms.gle/MfqjyM3XqWQuF6Zt7"/>
+    <LombaTemplate id="StoryTelling"  class="cards" namaLomba="STORY TELLING"             linkLomba="https://forms.gle/ZvPZfgx8NBb7baEu6" juknisLomba="https://drive.google.com/file/d/1hayw5ltfp2egrHCZ-5GW61kLAOq7VKP4/view?usp=drive_link"/>
+    <LombaTemplate id="OlimpiadeIPA"  class="cards" namaLomba="OLIM. IPA"                 linkLomba="https://forms.gle/aPSQKqpKqSBJ1ixx6" juknisLomba="https://drive.google.com/file/d/1ty5vwL8b0Pk7mAYdByBu4EHl9bGCyGLq/view?usp=drive_link"/>
+    <LombaTemplate id="OlimpiadeIPS"  class="cards" namaLomba="OLIM. IPS"                 linkLomba="https://forms.gle/aZVLEYFdLUt9ucVy8" juknisLomba="https://drive.google.com/file/d/1N-i81szwVRu6Mht0NDX_ujumSlbo1wkT/view?usp=drive_link"/>
+    <LombaTemplate id="Mhq"           class="cards" namaLomba="MHQ" subtitleLomba="(SMP)" linkLomba="https://forms.gle/AubgBiNoxG2QF8eE8" juknisLomba="https://drive.google.com/file/d/1HsZj0GTB4WS1umccbqsWdUlH-Y0yBxM_/view?usp=drive_link"/>
+    <LombaTemplate id="Mhq"           class="cards" namaLomba="MHQ" subtitleLomba="(SMA)" linkLomba="https://forms.gle/Qjqmdag8jhN7oUCz7" juknisLomba="https://drive.google.com/file/d/1bMsIb6F0mOMJbvbYebLN_svz7puoIVN5/view?usp=drive_link"/> 
+    <LombaTemplate id="EnglishSpeech" class="cards" namaLomba="ENGLISH SPEECH"            linkLomba="https://forms.gle/XA1bF6WPQ5ZB4M1j6" juknisLomba="https://drive.google.com/file/d/17CS-yZGeyS6VEE1IlpjdRI7svrJ_dEAb/view?usp=drive_link"/>
+    <LombaTemplate id="Futsal"        class="cards" namaLomba="FUTSAL"                    linkLomba="https://forms.gle/mK2YBXkxhBomyhLTA" juknisLomba="https://drive.google.com/file/d/16xD_ZHFUjZ4YPMz98ndaGCVBF3Q3URGS/view?usp=drive_link"/>
+    <LombaTemplate id="RatohJaroe"    class="cards" namaLomba="RATOH JAROE"               linkLomba="https://forms.gle/oHZTSNqAHpXsk2bC6" juknisLomba="https://drive.google.com/file/d/1NJuGu1IoZKfwS_0CYVwcw31qrb38dSUL/view?usp=drive_link"/>
+    <LombaTemplate id="Esai"          class="cards" namaLomba="ESAI"                      linkLomba="https://forms.gle/KGrmQg4DQTz4x1kQ7" juknisLomba="https://drive.google.com/file/d/1gmvRMGYmQfv5eWo7W7ZzR1OHVtazAzmn/view?usp=drive_link"/>
     <div class="carousel-space"></div>
-  </div>
-  
 </div>
+
 <div id="instructions" class="hoverPop">
   <h6>click and drag to scroll</h6>
 </div>
@@ -37,17 +29,17 @@ import Competitions_Title from "../images/titles/comps.png";
   }  */
   @media only screen and (min-width: 720px) {
     #RatohJaroe {
-      background: url("../images/bg-lomba/ratoh.png");
+      background: url("../images/bg-lomba/ratohjaroe.png");
       background-size: 100% 100%;
     
     }
     #EnglishSpeech {
-      background: url("../images/bg-lomba/english.png");
+      background: url("../images/bg-lomba/englishspeech.png");
       background-size: 100% 100%;
     }
 
     #Esai {
-      background: url("../images/bg-lomba/esai.png");
+      background: url("../images/bg-lomba/essay.png");
       background-size: 100% 100%;
     }
 
@@ -60,19 +52,20 @@ import Competitions_Title from "../images/titles/comps.png";
       background: url("../images/bg-lomba/MHQ.png");
       background-size: 100% 100%;
     }
-
-    #PidatoArab {
-      background: url("../images/bg-lomba/arab.png");
-      background-size: 100% 100%;
-    }
-
     #StoryTelling {
-      background: url("../images/bg-lomba/StoryTelling.png");
+      background: url("../images/bg-lomba/storytelling.png");
       background-size: 100% 100%;
     }
 
+    #OlimpiadeIPA {
+      background: url("../images/bg-lomba/olimpiadeIPA.png");
+      background-size: 100% 100%;
+    }
 
-
+    #OlimpiadeIPS {
+      background: url("../images/bg-lomba/olimpiadeIPS.png");
+      background-size: 100% 100%;
+    }
 
   }
 
@@ -89,37 +82,42 @@ import Competitions_Title from "../images/titles/comps.png";
     }
 
     #RatohJaroe {
-      background: url("../images/bg-lomba-mobile/ratoh.png");
+      background: url("../images/bg-lomba-mobile/ratohjaroemobile.png");
       background-size: 100% 100%;
     
     }
     #EnglishSpeech {
-      background: url("../images/bg-lomba-mobile/english.png");
+      background: url("../images/bg-lomba-mobile/englishspeechmobile.png");
       background-size: 100% 100%;
     }
 
     #Esai {
-      background: url("../images/bg-lomba-mobile/esai.png");
+      background: url("../images/bg-lomba-mobile/essaymobile.png");
       background-size: 100% 100%;
     }
 
     #Futsal {
-      background: url("../images/bg-lomba-mobile/futsal.png");
+      background: url("../images/bg-lomba-mobile/futsalmobile.png");
       background-size: 100% 100%;
     }
 
     #Mhq {
-      background: url("../images/bg-lomba-mobile/mhq.png");
-      background-size: 100% 100%;
-    }
-
-    #PidatoArab {
-      background: url("../images/bg-lomba-mobile/arab.png");
+      background: url("../images/bg-lomba-mobile/mhqmobile.png");
       background-size: 100% 100%;
     }
 
     #StoryTelling {
-      background: url("../images/bg-lomba-mobile/story.png");
+      background: url("../images/bg-lomba-mobile/storytellingmobile.png");
+      background-size: 100% 100%;
+    }
+
+    #OlimpiadeIPA {
+      background: url("../images/bg-lomba-mobile/olimpiadeIPAmobile.png");
+      background-size: 100% 100%;
+    }
+
+    #OlimpiadeIPS {
+      background: url("../images/bg-lomba-mobile/olimpiadeIPSmobile.png");
       background-size: 100% 100%;
     }
   }

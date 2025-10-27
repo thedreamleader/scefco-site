@@ -218,7 +218,7 @@ p {
 
 #tentang-main{
     width: 50vw;
-    height: 60vh;
+    height: 50vh;
     align-items: flex-start;
 }
 #tentang-main-text {
@@ -231,7 +231,8 @@ p {
 #tentang-paragraph {
     font-size: var(--p-fz);
     display: flex;
-    text-align:center;
+    justify-content: center;
+    text-align: center;
     word-spacing: 0px;
     margin: 0;
     padding: 0;
@@ -249,7 +250,6 @@ p {
 
 .tentang {
     text-align: center;
-    align-self: left;
     color: black;
 }
 
@@ -275,12 +275,13 @@ p {
     display: flex;
     flex-direction: column;
     width: 60vw;
-    height: 30vw;
+    height: 50vw;
 }
 
 #trailer-video {
-    width: 45vw;
-    height: 22.5vw;
+    width: 35vw;
+    height: 50vw;
+    padding-bottom: 20vw;
 }
 
 #trailer-title {
@@ -309,7 +310,7 @@ p {
 }
 
 #section-tentang-trailer {
-    height: 200vh;
+    height: 225vh;
     /* background-image: url("../images/backgrounds/trailer_tentang.png"); */
     background-size: 100% 100%;
     background: linear-gradient(180deg, #3991f2 0%,#ACE9FF 90%, #DCECFC 100%);
@@ -338,9 +339,10 @@ p {
 }
 
 #LogoScefco {
-    width: 85vw;
-    height: 42.5vw;
+    width: 80vw;
+    height: 35vw;
     background-color: transparent;
+    margin-top: 15vh;
     margin-bottom: 100px;
 }
 
@@ -508,14 +510,21 @@ iframe {
         border: 1px solid red;
     } */
 
+    #LogoScefco {
+        width: 100vw;
+        height: 100vw;
+        background-color: transparent;
+        margin-top: 35vh;
+    }
+
     #mainDiv {
         background-color: white;
     }
 
     #section-countdown {
-        background-size: 100% 45vh;
+        background-size: 100% 75vh;
         background-position: top;
-        height: 45vh;
+        height: 75vh;
     }
 
     #section-home {
